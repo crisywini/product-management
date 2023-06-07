@@ -7,6 +7,10 @@ public record CommonProduct(String id, String name, String description, double p
 
     private static final int MINIMUM_NAME_CHARACTER_LENGTH = 5;
 
+    public CommonProduct {
+        isNameValid();
+    }
+
     @Override
     public String getId() {
         return id;
