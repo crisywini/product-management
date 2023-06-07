@@ -7,6 +7,11 @@ public record TechnicalProduct(String id, String name, String description, doubl
 
     private static final int MINIMUM_NAME_CHARACTER_LENGTH = 5;
 
+    public TechnicalProduct {
+        isNameValid();
+        isTechnicalInformationValid();
+    }
+
     @Override
     public String getId() {
         return id;
