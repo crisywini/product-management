@@ -5,6 +5,8 @@ import java.util.Objects;
 public record CommonProduct(String id, String name, String description, double price) implements IProduct {
 
 
+    private static final int MINIMUM_NAME_CHARACTER_LENGTH = 5;
+
     @Override
     public String getId() {
         return id;
@@ -27,7 +29,7 @@ public record CommonProduct(String id, String name, String description, double p
 
     @Override
     public boolean isNameValid() {
-        return Objects.nonNull(name) && name.length() > 5;
+        return Objects.nonNull(name) && name.length() > MINIMUM_NAME_CHARACTER_LENGTH;
     }
 
 }
