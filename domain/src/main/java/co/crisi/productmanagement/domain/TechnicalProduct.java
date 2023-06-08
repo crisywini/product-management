@@ -2,14 +2,22 @@ package co.crisi.productmanagement.domain;
 
 import java.util.Objects;
 
+import static co.crisi.productmanagement.domain.validators.Validations.nonEmpty;
+import static co.crisi.productmanagement.domain.validators.Validations.nonNull;
+
 public record TechnicalProduct(String id, String name, String description, double price, String technicalInformation,
                                String instructionManual) implements ITechnicalProduct {
 
     private static final int MINIMUM_NAME_CHARACTER_LENGTH = 5;
 
-    public TechnicalProduct {
-        isNameValid();
-        isTechnicalInformationValid();
+    public TechnicalProduct(String id, String name, String description, double price, String technicalInformation,
+            String instructionManual) {
+        this.id = nonEmpty(id, "The id should be provided");
+        this.name = nonEmpty(name, "The name should be provided");
+        this.description = nonEmpty(description, "The description should be provided");
+        this.price = nonNull(price, "The price should be provided");
+        this.technicalInformation = nonEmpty(technicalInformation, "The technical information should be provided");
+        this.instructionManual = nonEmpty(instructionManual, "The instruction manual should be provided");
     }
 
     @Override
