@@ -4,7 +4,7 @@ import co.crisi.productmanagement.boundaries.input.register.ICommonProductRegist
 import co.crisi.productmanagement.boundaries.output.register.ICommonProductRegisterGateway;
 import co.crisi.productmanagement.domain.IProduct;
 import co.crisi.productmanagement.domain.factory.ICommonProductFactory;
-import co.crisi.productmanagement.exceptions.CommonProductBusinessException;
+import co.crisi.productmanagement.exceptions.ProductBusinessException;
 import co.crisi.productmanagement.exceptions.InvalidNameException;
 import co.crisi.productmanagement.exceptions.ProductAlreadySavedException;
 import co.crisi.productmanagement.model.request.CommonProductRequest;
@@ -20,7 +20,7 @@ public class CommonProductInteractor implements ICommonProductRegisterBoundary {
     private ICommonProductRegisterGateway gateway;
 
     @Override
-    public CommonProductResponse create(CommonProductRequest request) throws CommonProductBusinessException {
+    public CommonProductResponse create(CommonProductRequest request) throws ProductBusinessException {
         if (gateway.existsById(request.id())) {
             return presenter.prepareFailView(new ProductAlreadySavedException(
                     String.format("Product with id %s already exists!", request.id())));
@@ -33,7 +33,7 @@ public class CommonProductInteractor implements ICommonProductRegisterBoundary {
         }
 
         gateway.save(product);
-        //TODO: Create the mapper 
+        //TODO: Create the mapper
         CommonProductResponse response = new CommonProductResponse(product.getId(), product.getName(),
                 product.getDescription(), product.getPrice());
         return presenter.prepareSuccessfulView(response);
