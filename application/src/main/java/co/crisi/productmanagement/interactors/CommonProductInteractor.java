@@ -10,14 +10,16 @@ import co.crisi.productmanagement.exceptions.ProductAlreadySavedException;
 import co.crisi.productmanagement.model.request.CommonProductRequest;
 import co.crisi.productmanagement.model.response.CommonProductResponse;
 import co.crisi.productmanagement.presenter.ICommonProductPresenter;
+import lombok.RequiredArgsConstructor;
 
+@RequiredArgsConstructor
 public class CommonProductInteractor implements ICommonProductRegisterBoundary {
 
-    private ICommonProductPresenter presenter;
+    private final ICommonProductPresenter presenter;
 
-    private ICommonProductFactory factory;
+    private final ICommonProductFactory factory;
 
-    private ICommonProductRegisterGateway gateway;
+    private final ICommonProductRegisterGateway gateway;
 
     @Override
     public CommonProductResponse create(CommonProductRequest request) throws ProductBusinessException {
