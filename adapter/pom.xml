@@ -41,7 +41,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
           <skip>false</skip>
-          <mainClass>co.crisi.productmanagement.start.App</mainClass>
+          <mainClass>co.crisi.productmanagement.App</mainClass>
         </configuration>
       </plugin>
     </plugins>
