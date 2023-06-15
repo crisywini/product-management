@@ -4,14 +4,14 @@ import co.crisi.productmanagement.boundaries.output.register.ICommonProductRegis
 import co.crisi.productmanagement.domain.IProduct;
 import co.crisi.productmanagement.gateways.mapper.CommonProductJpaMapper;
 import co.crisi.productmanagement.repositories.CommonProductJpaRepository;
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@RequiredArgsConstructor
 @Service
 public class CommonProductCreationH2Gateway implements ICommonProductRegisterGateway {
 
-    private final CommonProductJpaRepository repository;
+    @Autowired
+    private CommonProductJpaRepository repository;
 
     @Override
     public void save(IProduct product) {

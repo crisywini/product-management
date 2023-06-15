@@ -4,14 +4,14 @@ import co.crisi.productmanagement.boundaries.output.register.ITechnicalProductRe
 import co.crisi.productmanagement.domain.ITechnicalProduct;
 import co.crisi.productmanagement.gateways.mapper.TechnicalProductJpaMapper;
 import co.crisi.productmanagement.repositories.TechnicalProductJpaRepository;
-import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@RequiredArgsConstructor
 @Service
 public class TechnicalProductCreationH2Gateway implements ITechnicalProductRegisterGateway {
 
-    private final TechnicalProductJpaRepository repository;
+    @Autowired
+    private TechnicalProductJpaRepository repository;
 
     @Override
     public boolean existsById(String id) {

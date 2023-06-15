@@ -11,7 +11,9 @@ import co.crisi.productmanagement.exceptions.ProductBusinessException;
 import co.crisi.productmanagement.model.request.TechnicalProductRequest;
 import co.crisi.productmanagement.model.response.TechnicalProductResponse;
 import co.crisi.productmanagement.presenter.ITechnicalProductPresenter;
+import lombok.AllArgsConstructor;
 
+@AllArgsConstructor
 public class TechnicalProductInteractor implements ITechnicalProductRegisterBoundary {
 
     private ITechnicalProductPresenter presenter;
