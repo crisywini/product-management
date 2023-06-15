@@ -1,4 +1,4 @@
-package co.crisi.productmanagement.start;
+package co.crisi.productmanagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
