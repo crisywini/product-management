@@ -5,7 +5,7 @@ import co.crisi.productmanagement.model.response.CommonProductResponse;
 
 public interface ICommonProductPresenter {
 
-    CommonProductResponse prepareSuccessfulView(CommonProductResponse request);
+    CommonProductResponse prepareSuccessfulView(CommonProductResponse response);
 
     CommonProductResponse prepareFailView(ProductBusinessException exception)
             throws ProductBusinessException;
