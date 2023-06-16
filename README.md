@@ -1,4 +1,4 @@
-[![Java CI with Maven](https://github.com/crisywini/product-management  /actions/workflows/maven.yml/badge.svg?branch=develop&event=push)](https://github.com/crisywini/piggy-bank/actions/workflows/maven.yml)
+[![Java CI with Maven](https://github.com/crisywini/product-management/actions/workflows/maven.yml/badge.svg?branch=develop&event=push)](https://github.com/crisywini/product-management/actions/workflows/maven.yml)
 
 # Product Management 
 
