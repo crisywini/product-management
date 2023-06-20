@@ -1,4 +1,4 @@
-package co.crisi.productmanagement.model.request;
+package co.crisi.productmanagement.model.request.register;
 
 import lombok.Builder;
 

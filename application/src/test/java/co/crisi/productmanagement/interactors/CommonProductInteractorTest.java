@@ -5,6 +5,7 @@ import co.crisi.productmanagement.domain.IProduct;
 import co.crisi.productmanagement.domain.factory.ICommonProductFactory;
 import co.crisi.productmanagement.domain.factory.impl.CommonProductFactory;
 import co.crisi.productmanagement.exceptions.ProductBusinessException;
+import co.crisi.productmanagement.interactors.register.CommonProductInteractor;
 import co.crisi.productmanagement.model.CommonProductRequestMother;
 import co.crisi.productmanagement.model.response.CommonProductResponse;
 import co.crisi.productmanagement.presenter.ICommonProductPresenter;
@@ -13,7 +14,6 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;

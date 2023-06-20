@@ -1,4 +1,4 @@
-package co.crisi.productmanagement.interactors;
+package co.crisi.productmanagement.interactors.register;
 
 import co.crisi.productmanagement.boundaries.input.register.ICommonProductRegisterBoundary;
 import co.crisi.productmanagement.boundaries.output.register.ICommonProductRegisterGateway;
@@ -7,7 +7,7 @@ import co.crisi.productmanagement.domain.factory.ICommonProductFactory;
 import co.crisi.productmanagement.exceptions.ProductBusinessException;
 import co.crisi.productmanagement.exceptions.InvalidNameException;
 import co.crisi.productmanagement.exceptions.ProductAlreadySavedException;
-import co.crisi.productmanagement.model.request.CommonProductRequest;
+import co.crisi.productmanagement.model.request.register.CommonProductRequest;
 import co.crisi.productmanagement.model.response.CommonProductResponse;
 import co.crisi.productmanagement.presenter.ICommonProductPresenter;
 import lombok.RequiredArgsConstructor;

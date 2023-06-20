@@ -2,7 +2,7 @@ package co.crisi.productmanagement.controller.register;
 
 import co.crisi.productmanagement.boundaries.input.register.ITechnicalProductRegisterBoundary;
 import co.crisi.productmanagement.exceptions.ProductBusinessException;
-import co.crisi.productmanagement.model.request.TechnicalProductRequest;
+import co.crisi.productmanagement.model.request.register.TechnicalProductRequest;
 import co.crisi.productmanagement.model.response.TechnicalProductResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

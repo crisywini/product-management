@@ -2,7 +2,7 @@ package co.crisi.productmanagement.controller.register;
 
 import co.crisi.productmanagement.boundaries.input.register.ICommonProductRegisterBoundary;
 import co.crisi.productmanagement.exceptions.ProductBusinessException;
-import co.crisi.productmanagement.model.request.CommonProductRequest;
+import co.crisi.productmanagement.model.request.register.CommonProductRequest;
 import co.crisi.productmanagement.model.response.CommonProductResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
