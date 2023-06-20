@@ -8,7 +8,6 @@ import co.crisi.productmanagement.model.response.TechnicalProductResponse;
 import co.crisi.productmanagement.presenter.ITechnicalProductExtractPresenter;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
 public class TechnicalProductExtractInteractor implements ITechnicalProductExtractBoundary {
