@@ -21,12 +21,9 @@ public class TechnicalProductExtractController {
     @GetMapping("/{id}")
     public ResponseEntity<TechnicalProductResponse> getById(
             @PathVariable(name = "id")
-                    String id) {
-        try {
-            return ResponseEntity.ok(boundary.getById(id));
-        } catch (ProductBusinessException e) {
-            return (ResponseEntity<TechnicalProductResponse>) ResponseEntity.notFound();
-        }
+                    String id) throws ProductBusinessException {
+
+        return ResponseEntity.ok(boundary.getById(id));
     }
 
     @GetMapping

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/products/common")
 public class CommonProductExtractController {
 
     @Autowired
@@ -21,12 +21,8 @@ public class CommonProductExtractController {
     @GetMapping("/{id}")
     public ResponseEntity<CommonProductResponse> getById(
             @PathVariable(name = "id")
-                    String id) {
-        try {
-            return ResponseEntity.ok(boundary.getById(id));
-        } catch (ProductBusinessException e) {
-            return (ResponseEntity<CommonProductResponse>) ResponseEntity.notFound();
-        }
+                    String id) throws ProductBusinessException {
+        return ResponseEntity.ok(boundary.getById(id));
 
     }
 
