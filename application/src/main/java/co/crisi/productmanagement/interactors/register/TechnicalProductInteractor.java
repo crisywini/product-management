@@ -1,4 +1,4 @@
-package co.crisi.productmanagement.interactors;
+package co.crisi.productmanagement.interactors.register;
 
 import co.crisi.productmanagement.boundaries.input.register.ITechnicalProductRegisterBoundary;
 import co.crisi.productmanagement.boundaries.output.register.ITechnicalProductRegisterGateway;
@@ -8,7 +8,7 @@ import co.crisi.productmanagement.exceptions.InvalidNameException;
 import co.crisi.productmanagement.exceptions.InvalidTechnicalInformationException;
 import co.crisi.productmanagement.exceptions.ProductAlreadySavedException;
 import co.crisi.productmanagement.exceptions.ProductBusinessException;
-import co.crisi.productmanagement.model.request.TechnicalProductRequest;
+import co.crisi.productmanagement.model.request.register.TechnicalProductRequest;
 import co.crisi.productmanagement.model.response.TechnicalProductResponse;
 import co.crisi.productmanagement.presenter.ITechnicalProductPresenter;
 import lombok.AllArgsConstructor;

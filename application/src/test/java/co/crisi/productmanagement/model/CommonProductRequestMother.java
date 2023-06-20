@@ -1,6 +1,6 @@
 package co.crisi.productmanagement.model;
 
-import co.crisi.productmanagement.model.request.CommonProductRequest;
+import co.crisi.productmanagement.model.request.register.CommonProductRequest;
 import java.util.Random;
 import lombok.experimental.UtilityClass;
 

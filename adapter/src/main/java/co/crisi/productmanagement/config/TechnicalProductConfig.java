@@ -5,9 +5,9 @@ import co.crisi.productmanagement.boundaries.output.register.ITechnicalProductRe
 import co.crisi.productmanagement.domain.factory.ITechnicalProductFactory;
 import co.crisi.productmanagement.domain.factory.impl.TechnicalProductFactory;
 import co.crisi.productmanagement.gateways.h2.TechnicalProductCreationH2Gateway;
-import co.crisi.productmanagement.interactors.TechnicalProductInteractor;
+import co.crisi.productmanagement.interactors.register.TechnicalProductInteractor;
 import co.crisi.productmanagement.presenter.ITechnicalProductPresenter;
-import co.crisi.productmanagement.presenter.TechnicalProductPresenter;
+import co.crisi.productmanagement.presenter.register.TechnicalProductPresenter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
